@@ -1,0 +1,110 @@
+.cardapio {
+  width: 100%;
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 24px;
+  box-sizing: border-box;
+  background: #ffffff;
+  color: #222222;
+  border: 1px solid #dddddd;
+  border-radius: 16px;
+}
+
+.cardapio h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.cardapio-subtitulo {
+  margin-bottom: 22px;
+  text-align: center;
+  color: #666666;
+}
+
+.cardapio-imagem {
+  min-height: 190px;
+  margin-bottom: 25px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 2px dashed #aaaaaa;
+  border-radius: 12px;
+  background: #f7f7f7;
+  box-sizing: border-box;
+}
+
+.cardapio-imagem-icone {
+  font-size: 38px;
+  color: #777777;
+}
+
+.cardapio-imagem p {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.cardapio-imagem small {
+  color: #666666;
+  overflow-wrap: anywhere;
+}
+
+.cardapio h3 {
+  margin-top: 24px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.cardapio-lista {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.cardapio-item {
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+}
+
+.cardapio-item h4 {
+  margin: 0 0 8px;
+}
+
+.cardapio-item p {
+  margin: 0;
+  color: #666666;
+  font-size: 14px;
+}
+
+.cardapio-bebidas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cardapio-bebida {
+  padding: 8px 12px;
+  border: 1px solid #dddddd;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.cardapio-observacao {
+  margin-bottom: 0;
+  color: #666666;
+  font-size: 13px;
+}
+
+@media (max-width: 480px) {
+  .cardapio {
+    padding: 16px;
+  }
+
+  .cardapio-lista {
+    grid-template-columns: 1fr;
+  }
+}
