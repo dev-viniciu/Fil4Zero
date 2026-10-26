@@ -1,0 +1,45 @@
+ .main-container, .carteirinha, .funcionario {
+  max-width: 600px;
+  width: 100%;
+  margin: 32px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.main-container label, .funcionario label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin: 15px 0 5px;
+}
+.main-container label:first-of-type, .funcionario label:first-of-type { margin-top: 0; }
+.main-container input, .funcionario input {
+  width: 100%;
+  padding: 11px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+.main-container input:focus, .funcionario input:focus { border-color: #0066cc; outline: none; }
+.main-container p, .carteirinha p, .funcionario p { font-size: 14px; color: #555; margin: 6px 0; }
+.main-container button, .carteirinha button, .funcionario button {
+  margin-top: 16px;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background: #0066cc;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.main-container button:hover, .carteirinha button:hover, .funcionario button:hover { background: #0052a3; }
+.carteirinha { align-items: center; text-align: center; }
+.carteirinha svg { margin: 18px 0; max-width: 100%; height: auto; }
+#leitor-qr { width: 100%; max-width: 320px; margin: 16px auto; }
